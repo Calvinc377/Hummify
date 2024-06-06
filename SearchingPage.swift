@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Searching: View {
+struct SearchingPage: View {
     var body: some View {
         VStack {
     
@@ -18,27 +18,29 @@ struct Searching: View {
                 .fontWeight(.bold)
                 .padding(.bottom, 10.0)
             
+            ZStack {
+                
+                Circle()
+                    .fill(Color.blue)
+                    .frame(width: 202, height: 202)
+                
+                Circle()
+                    .stroke(lineWidth: 8)
+                    .fill(Color.gray)
+                    .frame(width: 210, height: 210)
+                
+                Image(systemName: "mic.fill")
+                    .resizable()
+                    .frame(width: 96.0, height: 115.0)
+                    .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color.white)
+            
+            }
+            .padding()
+            
         }
         .padding(.bottom, 50.0)
-        ZStack {
-            
-            Circle()
-                .fill(Color.blue)
-                .frame(width: 202, height: 202)
-            
-            Circle()
-                .stroke(lineWidth: 8)
-                .fill(Color.gray)
-                .frame(width: 210, height: 210)
-            
-            Image(systemName: "mic.fill")
-                .resizable()
-                .frame(width: 96.0, height: 115.0)
-                .imageScale(/*@START_MENU_TOKEN@*/.medium/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color.white)
         
-        }
-        .padding(.bottom, 130.0)
         
         
         
@@ -46,5 +48,5 @@ struct Searching: View {
 }
 
 #Preview {
-    Searching()
+    SearchingPage()
 }

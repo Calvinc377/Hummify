@@ -13,7 +13,7 @@ struct MiddleGround: View {
 
     var body: some View {
         if musicAuthorizationManager.isAuthorized {
-            HumPage()
+            TabItem()
         } else {
             Text("Authorization required to access Apple Music.")
                 .padding()
