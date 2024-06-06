@@ -32,7 +32,8 @@ struct SongList: View {
                             .onTapGesture {
                                 Task {
                                     isLoading = true
-                                    await searchForSongs(searchTerm: result.identifier)
+                                    searchTerm = result.identifier
+                                    await searchForSongs(searchTerm: searchTerm)
                                     isLoading = false
                                     showSearchResults = true // Set to true after searching
                                 }
@@ -69,18 +70,20 @@ struct SongSearchView: View {
     var body: some View {
         NavigationStack{
             List {
-                Text("Search Results")
-                    .font(.title)
+                Text("Search Results of \(searchTerm)")
+                    .font(.title2)
                     .listRowBackground(Color(white: 1, opacity: 0))
                     .padding()
                 ForEach(searchResults) { song in
                     NavigationLink(destination: SongDetailsView(song: song)) {
                         HStack{
                             ArtworkImage(song.artwork!, width: 100)
-                                .padding()
-                            VStack{
+                            VStack(alignment: .leading){
                                 Text(song.title)
+                                    .multilineTextAlignment(.leading)
                                 Text(song.artistName)
+                                    .font(.caption2)
+                                    .multilineTextAlignment(.leading)
                             }
                         }
                     }
