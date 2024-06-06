@@ -54,8 +54,7 @@ struct HumPage: View {
     @State var recorder: AVAudioRecorder?
     @State var observer: ResultsObservers!
     @State var classificationResults: [ClassifiedResult] = [] // Initialize an empty array
-    @State var finishedClassify = false
-
+    
     
     
     var body: some View {
@@ -88,31 +87,49 @@ struct HumPage: View {
                     .symbolEffect(.bounce, value: isListening)
             }
             .onTapGesture {
-                isListening.toggle()
+                if classificationResults.isEmpty{
+                    isListening.toggle()
+                }
             }
             .onChange(of: isListening){newValue in
-                if newValue {
-                    startTimer()
-                    requestMicrophonePermission()
-                } else {
-                    stopTimer()
-                    stopRecording()
+                if classificationResults.isEmpty{
+                    if newValue {
+                        startTimer()
+                        requestMicrophonePermission()
+                    } else {
+                        stopTimer()
+                        stopRecording()
+                    }
                 }
             }
-            .onChange(of: finishedClassify){
-                if finishedClassify{
-                    
+            .disabled(!classificationResults.isEmpty)
+            
+            if !classificationResults.isEmpty{
+                NavigationLink(destination: SongList(classificationResults: $classificationResults)) {
+                    HStack {
+                        Text("See Results")
+                            .padding(.vertical)
+                            .font(.title2)
+                        Image(systemName: "chevron.right")
+                            .resizable()
+                            .padding(.vertical)
+                            .frame(width: 20, height: 60)
+                            .symbolEffect(.bounce, options: .repeat(2), value: classificationResults.isEmpty)
+                        
+                    }
                 }
             }
+            
+            
         }
         .onAppear(){
             isListening = false
-            finishedClassify = false
+            classificationResults = []
             isRecording = false
             setupRecorder()
             observer = ResultsObservers(result: $classificationResults) // Use the new binding
             print("mainview loaded")
-
+            
         }
         .padding(.bottom, 50.0)
     }
@@ -214,7 +231,7 @@ struct HumPage: View {
             if timeCount < 15 {
                 timeCount += 1
             } else {
-//                isListening = false
+                //                isListening = false
                 stopTimer()
             }
         }
@@ -265,7 +282,7 @@ class ResultsObservers: NSObject, SNResultsObserving {
     /// Notifies the observer when a request is complete.
     func requestDidComplete(_ request: SNRequest) {
         print("The request completed successfully!")
-        print(self.classificationResults.first!)
+        //        print(self.classificationResults.first!)
     }
 }
 

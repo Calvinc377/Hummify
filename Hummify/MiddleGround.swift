@@ -15,7 +15,7 @@ struct MiddleGround: View {
         if musicAuthorizationManager.isAuthorized {
             TabItem()
         } else {
-            Text("Authorization required to access Apple Music.")
+            Text("Authorization required to access this app.")
                 .padding()
         }
     }
