@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		425468D12C11FC3F00B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468D02C11FC3F00B83554 /* SongHum.mlmodel */; };
+		425468D22C11FC3F00B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468D02C11FC3F00B83554 /* SongHum.mlmodel */; };
 		42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F65B2C11519E00FEA64F /* MiddleGround.swift */; };
 		BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB946F2C1147DF00409421 /* HummifyApp.swift */; };
 		BEAB94742C1147E000409421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94732C1147E000409421 /* Assets.xcassets */; };
@@ -26,7 +28,6 @@
 		BEAB94A82C114C2E00409421 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94A72C114C2E00409421 /* SongList.swift */; };
 		BEAB94AA2C114C7800409421 /* HumPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94A92C114C7800409421 /* HumPage.swift */; };
 		BEAB94AC2C114CF400409421 /* VocalRangePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94AB2C114CF400409421 /* VocalRangePage.swift */; };
-		BEAB94AE2C114D5E00409421 /* SearchingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94AD2C114D5E00409421 /* SearchingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		425468D02C11FC3F00B83554 /* SongHum.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SongHum.mlmodel; sourceTree = "<group>"; };
 		42C0F65B2C11519E00FEA64F /* MiddleGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleGround.swift; sourceTree = "<group>"; };
 		BEAB946C2C1147DF00409421 /* Hummify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hummify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAB946F2C1147DF00409421 /* HummifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HummifyApp.swift; sourceTree = "<group>"; };
@@ -74,7 +76,6 @@
 		BEAB94A72C114C2E00409421 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		BEAB94A92C114C7800409421 /* HumPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumPage.swift; sourceTree = SOURCE_ROOT; };
 		BEAB94AB2C114CF400409421 /* VocalRangePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocalRangePage.swift; sourceTree = SOURCE_ROOT; };
-		BEAB94AD2C114D5E00409421 /* SearchingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingPage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +121,7 @@
 				42C0F65B2C11519E00FEA64F /* MiddleGround.swift */,
 				BEAB94A92C114C7800409421 /* HumPage.swift */,
 				BEAB94A72C114C2E00409421 /* SongList.swift */,
-				BEAB94AD2C114D5E00409421 /* SearchingPage.swift */,
+				425468D02C11FC3F00B83554 /* SongHum.mlmodel */,
 				BEAB94AB2C114CF400409421 /* VocalRangePage.swift */,
 				BEAB94732C1147E000409421 /* Assets.xcassets */,
 				BEAB94752C1147E000409421 /* Preview Content */,
@@ -268,7 +269,7 @@
 				BEAB94AC2C114CF400409421 /* VocalRangePage.swift in Sources */,
 				BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */,
 				BEAB94AA2C114C7800409421 /* HumPage.swift in Sources */,
-				BEAB94AE2C114D5E00409421 /* SearchingPage.swift in Sources */,
+				425468D12C11FC3F00B83554 /* SongHum.mlmodel in Sources */,
 				42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425468D22C11FC3F00B83554 /* SongHum.mlmodel in Sources */,
 				BEAB94A42C114BF900409421 /* LowNote.swift in Sources */,
 				BEAB948C2C114AEC00409421 /* ContentView.swift in Sources */,
 				BEAB949C2C114B8100409421 /* AccuracyPage.swift in Sources */,
