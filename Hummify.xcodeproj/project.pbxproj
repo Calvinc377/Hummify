@@ -10,7 +10,6 @@
 		BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB946F2C1147DF00409421 /* HummifyApp.swift */; };
 		BEAB94742C1147E000409421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94732C1147E000409421 /* Assets.xcassets */; };
 		BEAB94772C1147E000409421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94762C1147E000409421 /* Preview Assets.xcassets */; };
-		BEAB94812C114A4C00409421 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94802C114A4C00409421 /* ContentView.swift */; };
 		BEAB948A2C114AEC00409421 /* HummifyWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB94892C114AEC00409421 /* HummifyWatchApp.swift */; };
 		BEAB948C2C114AEC00409421 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB948B2C114AEC00409421 /* ContentView.swift */; };
 		BEAB948E2C114AEE00409421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB948D2C114AEE00409421 /* Assets.xcassets */; };
@@ -58,7 +57,6 @@
 		BEAB946F2C1147DF00409421 /* HummifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HummifyApp.swift; sourceTree = "<group>"; };
 		BEAB94732C1147E000409421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEAB94762C1147E000409421 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BEAB94802C114A4C00409421 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BEAB94872C114AEC00409421 /* HummifyWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HummifyWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAB94892C114AEC00409421 /* HummifyWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HummifyWatchApp.swift; sourceTree = "<group>"; };
 		BEAB948B2C114AEC00409421 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			children = (
 				BEAB946F2C1147DF00409421 /* HummifyApp.swift */,
 				BEAB94A92C114C7800409421 /* HumPage.swift */,
-				BEAB94802C114A4C00409421 /* ContentView.swift */,
 				BEAB94A72C114C2E00409421 /* SongList.swift */,
 				BEAB94AD2C114D5E00409421 /* SearchingPage.swift */,
 				BEAB94AB2C114CF400409421 /* VocalRangePage.swift */,
@@ -265,7 +262,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEAB94A82C114C2E00409421 /* SongList.swift in Sources */,
-				BEAB94812C114A4C00409421 /* ContentView.swift in Sources */,
 				BEAB94AC2C114CF400409421 /* VocalRangePage.swift in Sources */,
 				BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */,
 				BEAB94AA2C114C7800409421 /* HumPage.swift in Sources */,

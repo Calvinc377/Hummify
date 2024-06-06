@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ContentView: View {
+struct HumPage: View {
     var body: some View {
         VStack {
     
