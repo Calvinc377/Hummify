@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SearchingPage.swift
 //  Hummify
 //
 //  Created by Calvin Christiano on 06/06/24.
