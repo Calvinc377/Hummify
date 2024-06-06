@@ -425,9 +425,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hummify/Preview Content\"";
-				DEVELOPMENT_TEAM = 62YN3ZTWC6;
+				DEVELOPMENT_TEAM = 59XW7Z84R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Please Allow The Usage of Your Music Library";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow The Usage of Your Microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,9 +459,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hummify/Preview Content\"";
-				DEVELOPMENT_TEAM = 62YN3ZTWC6;
+				DEVELOPMENT_TEAM = 59XW7Z84R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Please Allow The Usage of Your Music Library";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please Allow The Usage of Your Microphone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
