@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F65B2C11519E00FEA64F /* MiddleGround.swift */; };
 		BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB946F2C1147DF00409421 /* HummifyApp.swift */; };
 		BEAB94742C1147E000409421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94732C1147E000409421 /* Assets.xcassets */; };
 		BEAB94772C1147E000409421 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94762C1147E000409421 /* Preview Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		42C0F65B2C11519E00FEA64F /* MiddleGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleGround.swift; sourceTree = "<group>"; };
 		BEAB946C2C1147DF00409421 /* Hummify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hummify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAB946F2C1147DF00409421 /* HummifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HummifyApp.swift; sourceTree = "<group>"; };
 		BEAB94732C1147E000409421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				BEAB946F2C1147DF00409421 /* HummifyApp.swift */,
+				42C0F65B2C11519E00FEA64F /* MiddleGround.swift */,
 				BEAB94A92C114C7800409421 /* HumPage.swift */,
 				BEAB94A72C114C2E00409421 /* SongList.swift */,
 				BEAB94AD2C114D5E00409421 /* SearchingPage.swift */,
@@ -266,6 +269,7 @@
 				BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */,
 				BEAB94AA2C114C7800409421 /* HumPage.swift in Sources */,
 				BEAB94AE2C114D5E00409421 /* SearchingPage.swift in Sources */,
+				42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +496,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HummifyWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 62YN3ZTWC6;
+				DEVELOPMENT_TEAM = 59XW7Z84R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HummifyWatch;
@@ -523,7 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HummifyWatch Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 62YN3ZTWC6;
+				DEVELOPMENT_TEAM = 59XW7Z84R6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = HummifyWatch;

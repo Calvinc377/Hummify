@@ -6,12 +6,32 @@
 //
 
 import SwiftUI
+import MusicKit
 
 @main
 struct HummifyApp: App {
+    @StateObject private var musicAuthorizationManager = MusicAuthorizationManager()
+    
     var body: some Scene {
         WindowGroup {
-            HumPage()
+            MiddleGround()
+                .environmentObject(musicAuthorizationManager)
+                .onAppear(){
+                    Task{
+                        await musicAuthorizationManager.requestAuthorization()
+                    }
+                }
+        }
+    }
+}
+
+class MusicAuthorizationManager: ObservableObject {
+    @Published var isAuthorized: Bool = false
+    
+    func requestAuthorization() async {
+        let status = await MusicAuthorization.request()
+        DispatchQueue.main.async {
+            self.isAuthorized = (status == .authorized)
         }
     }
 }
