@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct SongList: View {
+    var body: some View {
+        
+        VStack {
+            Text("template kosong")
+            
+        }
+    }
+}
+
+#Preview {
+    SongList()
+}

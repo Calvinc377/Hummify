@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct ppp: View {
+    var body: some View {
+        Text("Helo")
+    }
+}
+    
+//    #Preview {
+//        ContentView()
+//    }
