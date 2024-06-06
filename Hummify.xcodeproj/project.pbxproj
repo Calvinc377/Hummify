@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		425468D12C11FC3F00B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468D02C11FC3F00B83554 /* SongHum.mlmodel */; };
-		425468D22C11FC3F00B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468D02C11FC3F00B83554 /* SongHum.mlmodel */; };
 		425468D82C121EE200B83554 /* ProminentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425468D72C121EE200B83554 /* ProminentButtonStyle.swift */; };
 		425468D92C121EE200B83554 /* ProminentButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425468D72C121EE200B83554 /* ProminentButtonStyle.swift */; };
+		425468DB2C12277500B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468DA2C12277500B83554 /* SongHum.mlmodel */; };
+		425468DC2C12277500B83554 /* SongHum.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 425468DA2C12277500B83554 /* SongHum.mlmodel */; };
 		42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C0F65B2C11519E00FEA64F /* MiddleGround.swift */; };
 		BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB946F2C1147DF00409421 /* HummifyApp.swift */; };
 		BEAB94742C1147E000409421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEAB94732C1147E000409421 /* Assets.xcassets */; };
@@ -57,9 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		425468D02C11FC3F00B83554 /* SongHum.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SongHum.mlmodel; sourceTree = "<group>"; };
 		425468D62C121E5900B83554 /* Hummify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hummify.entitlements; sourceTree = "<group>"; };
 		425468D72C121EE200B83554 /* ProminentButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProminentButtonStyle.swift; path = Hummify/ProminentButtonStyle.swift; sourceTree = SOURCE_ROOT; };
+		425468DA2C12277500B83554 /* SongHum.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SongHum.mlmodel; sourceTree = SOURCE_ROOT; };
 		42C0F65B2C11519E00FEA64F /* MiddleGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleGround.swift; sourceTree = "<group>"; };
 		BEAB946C2C1147DF00409421 /* Hummify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hummify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEAB946F2C1147DF00409421 /* HummifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HummifyApp.swift; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 				42C0F65B2C11519E00FEA64F /* MiddleGround.swift */,
 				BEAB94A92C114C7800409421 /* HumPage.swift */,
 				BEAB94A72C114C2E00409421 /* SongList.swift */,
-				425468D02C11FC3F00B83554 /* SongHum.mlmodel */,
 				BEAB94AB2C114CF400409421 /* VocalRangePage.swift */,
+				425468DA2C12277500B83554 /* SongHum.mlmodel */,
 				BEAB94732C1147E000409421 /* Assets.xcassets */,
 				425468D72C121EE200B83554 /* ProminentButtonStyle.swift */,
 				BEAB94752C1147E000409421 /* Preview Content */,
@@ -275,8 +275,8 @@
 				BEAB94AC2C114CF400409421 /* VocalRangePage.swift in Sources */,
 				BEAB94702C1147DF00409421 /* HummifyApp.swift in Sources */,
 				BEAB94AA2C114C7800409421 /* HumPage.swift in Sources */,
+				425468DB2C12277500B83554 /* SongHum.mlmodel in Sources */,
 				425468D82C121EE200B83554 /* ProminentButtonStyle.swift in Sources */,
-				425468D12C11FC3F00B83554 /* SongHum.mlmodel in Sources */,
 				42C0F65C2C11519E00FEA64F /* MiddleGround.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425468D22C11FC3F00B83554 /* SongHum.mlmodel in Sources */,
 				BEAB94A42C114BF900409421 /* LowNote.swift in Sources */,
 				BEAB948C2C114AEC00409421 /* ContentView.swift in Sources */,
 				BEAB949C2C114B8100409421 /* AccuracyPage.swift in Sources */,
@@ -296,6 +295,7 @@
 				BEAB949A2C114B4700409421 /* HumToSearch.swift in Sources */,
 				BEAB948A2C114AEC00409421 /* HummifyWatchApp.swift in Sources */,
 				BEAB94A22C114BDA00409421 /* VocalRange.swift in Sources */,
+				425468DC2C12277500B83554 /* SongHum.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
