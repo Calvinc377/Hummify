@@ -15,33 +15,35 @@ struct SongList: View {
                 if isLoading {
                     ProgressView("Searching...")
                 } else {
-                    List {
-                        ForEach(classificationResults) { result in
-                            HStack{
-                                VStack(alignment: .leading) {
-                                    Text(result.identifier)
-                                        .multilineTextAlignment(.leading)
-                                    Text("Accuracy: " + result.confidence)
-                                        .multilineTextAlignment(.leading)
+                    HStack(alignment: .top){
+                        List {
+                            ForEach(classificationResults) { result in
+                                HStack{
+                                    VStack(alignment: .leading) {
+                                        Text(result.identifier)
+                                            .multilineTextAlignment(.leading)
+                                        Text("Accuracy: " + result.confidence)
+                                            .multilineTextAlignment(.leading)
+                                    }
+                                    Spacer()
+                                    Image(systemName: "chevron.right")
+                                        .resizable()
+                                        .frame(width: 20, height: 30)
                                 }
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                                    .resizable()
-                                    .frame(width: 20, height: 30)
-                            }
-                            .onTapGesture {
-                                Task {
-                                    isLoading = true
-                                    searchTerm = result.identifier
-                                    await searchForSongs(searchTerm: searchTerm)
-                                    isLoading = false
-                                    showSearchResults = true // Set to true after searching
+                                .onTapGesture {
+                                    Task {
+                                        isLoading = true
+                                        searchTerm = result.identifier
+                                        await searchForSongs(searchTerm: searchTerm)
+                                        isLoading = false
+                                        showSearchResults = true // Set to true after searching
+                                    }
                                 }
                             }
                         }
-                    }
-                    .sheet(isPresented: $showSearchResults) {
-                        SongSearchView(searchTerm: $searchTerm, searchResults: $searchResults)
+                        .sheet(isPresented: $showSearchResults) {
+                            SongSearchView(searchTerm: $searchTerm, searchResults: $searchResults)
+                        }
                     }
                 }
             }
