@@ -18,7 +18,7 @@ struct SongList: View {
                     List {
                         ForEach(classificationResults) { result in
                             HStack{
-                                VStack {
+                                VStack(alignment: .leading) {
                                     Text(result.identifier)
                                         .multilineTextAlignment(.leading)
                                     Text("Accuracy: " + result.confidence)
