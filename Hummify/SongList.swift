@@ -11,9 +11,13 @@ struct SongList: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
+            ZStack(alignment: .topLeading) {
                 if isLoading {
-                    ProgressView("Searching...")
+                    VStack(){
+                        HStack(alignment: .center){
+                            ProgressView("Searching...")
+                        }
+                    }
                 } else {
                     HStack(alignment: .top){
                         List {

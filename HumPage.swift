@@ -10,7 +10,7 @@ class NavigationState: ObservableObject {
 }
 
 struct TabItem: View {
-    @State private var selection = 0
+    @State var selection = 0
     @StateObject private var navigationState = NavigationState()
     
     var body: some View {
